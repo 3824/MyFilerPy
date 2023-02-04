@@ -14,6 +14,12 @@ class MyFiler(tk.Frame):
 
         f_toolbar.pack(fill = tk.X)
 
+        ## left culumn
+        left_frame = tk.Frame(self.master, relief = tk.SUNKEN)
+        dir_tree = ttk.Treeview(left_frame)
+        dir_tree.pack()
+        left_frame.pack(side = tk.LEFT, fill = tk.Y)
+
 # root = tk.Tk()
 
 # root.title("my filer py")
